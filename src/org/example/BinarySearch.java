@@ -6,13 +6,13 @@ class BinarySearch {
         int [] a = {1,2,3,4,5,8,9};
 
         int l = 0;
-        int r = a.length - 1;   // ✅ FIXED
+        int r = a.length - 1;
 
         int target = 2;
 
         while(l <= r){
 
-            int mid = l + (r - l) / 2;   // safer way
+            int mid = l + (r - l) / 2;
             System.out.println("Mid: " + mid);
 
             if(a[mid] == target){
@@ -22,7 +22,7 @@ class BinarySearch {
             else if(a[mid] < target){
                 l = mid + 1;
             }
-            else{
+            else {
                 r = mid - 1;
             }
         }

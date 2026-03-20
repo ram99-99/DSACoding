@@ -12,6 +12,8 @@ public class LeftRotation {
         int[] rotated = new int[n];
 
         k = k % n;   // handle k > n
+        System.out.println(k);
+        System.out.println(n);
 
         // Copy elements from k to end
         for(int i = 0; i < n - k; i++){
